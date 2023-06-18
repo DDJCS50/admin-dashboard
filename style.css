@@ -100,26 +100,55 @@ header {
   background-color: white;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: -1px 0px 6px 3px gray;
+  background-color: beige;
 }
 header > div {
-  background-color: beige;
   display: grid;
   grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 12px;
+}
+header > div > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-auto-flow: column;
   place-items: center;
 }
-header > div > p {
+header > div > div > p {
   font-weight: bold;
 }
-header > div > p > b {
+header > div > div > p > b {
   font-size: 1.5rem;
+}
+header > div > div > input[type=search] {
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  grid-column: 2/4;
+  height: 1.75rem;
+  width: 32rem;
+  background-color: lightgray;
+  justify-self: start;
+}
+header > div:first-child > div:first-child {
+  display: flex;
+  justify-self: start;
+}
+header > div:first-child > div:first-child > div {
+  justify-self: start;
+}
+header > div:last-child > div:first-child > img {
+  justify-self: start;
 }
 
 #sidebar {
   grid-row: 1/3;
   background-color: lightblue;
-}
-
-main {
-  background-color: lightgray;
 }
