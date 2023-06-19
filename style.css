@@ -100,8 +100,8 @@ header {
   background-color: white;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-top: 12px;
   padding-bottom: 12px;
   box-shadow: -1px 0px 6px 3px gray;
@@ -110,7 +110,7 @@ header {
 header > div {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-auto-flow: column;
   place-items: center;
   gap: 12px;
@@ -133,22 +133,58 @@ header > div > div > input[type=search] {
   border: none;
   grid-column: 2/4;
   height: 1.75rem;
-  width: 32rem;
+  width: 38rem;
   background-color: lightgray;
   justify-self: start;
+}
+header > div:first-child {
+  margin-right: auto;
 }
 header > div:first-child > div:first-child {
   display: flex;
   justify-self: start;
+  gap: 16px;
+  min-width: 640px;
 }
 header > div:first-child > div:first-child > div {
   justify-self: start;
 }
+header > div:first-child > div:last-child {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+}
+header > div:last-child {
+  margin-right: auto;
+}
+header > div:last-child > div:first-child {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  gap: 24px;
+  min-width: 550px;
+}
 header > div:last-child > div:first-child > img {
   justify-self: start;
+}
+header > div:last-child > div:first-child > p {
+  line-height: 30px;
+}
+header > div:last-child > div:last-child {
+  display: flex;
+  gap: 36px;
+  margin-left: auto;
+}
+header > div:last-child > div:last-child > button {
+  border-radius: 24px;
+  font-weight: bold;
 }
 
 #sidebar {
   grid-row: 1/3;
   background-color: lightblue;
+}
+
+main {
+  background-color: azure;
 }
