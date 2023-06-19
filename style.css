@@ -215,6 +215,7 @@ header > div:last-child > div:last-child > button {
 #sidebar > div:nth-child(2) > div > p {
   color: white;
   font-weight: bold;
+  font-size: 1.25rem;
 }
 #sidebar > div:last-child {
   display: flex;
@@ -229,8 +230,19 @@ header > div:last-child > div:last-child > button {
 #sidebar > div:last-child > div > p {
   color: white;
   font-weight: bold;
+  font-size: 1.25rem;
 }
 
 main {
   background-color: azure;
+  display: grid;
+  grid-template-columns: 2fr 0.75fr;
+}
+main > div:last-child {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+h3, h4 {
+  font-weight: bold;
 }

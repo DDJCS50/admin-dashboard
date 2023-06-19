@@ -208,6 +208,7 @@ header {
             > p {
                 color: white;
                 font-weight: bold;
+                font-size: 1.25rem;
             }
         }
     }
@@ -223,6 +224,7 @@ header {
             > p {
                 color: white;
                 font-weight: bold;
+                font-size: 1.25rem;
             }
         }
     }
@@ -230,4 +232,18 @@ header {
 
 main {
     background-color: azure;
+    display: grid;
+    grid-template-columns: 2fr .75fr;
+    > div:last-child {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.card {
+    
+}
+
+h3, h4 {
+    font-weight: bold;
 }
