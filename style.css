@@ -86,7 +86,7 @@ b {
 
 body {
   display: grid;
-  grid-template: 1fr 4fr/1fr 4fr;
+  grid-template: 200px 1fr/1fr 4fr;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -99,7 +99,7 @@ header {
   padding-top: 12px;
   padding-bottom: 12px;
   box-shadow: 0px 0px 20px -5px gray;
-  background-color: beige;
+  background-color: white;
   min-width: 75vw;
   margin-bottom: 4px;
 }
@@ -121,7 +121,7 @@ header > div > div > p {
   font-weight: bold;
 }
 header > div > div > p > b {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 header > div > div > input[type=search] {
   border-radius: 16px;
@@ -130,7 +130,7 @@ header > div > div > input[type=search] {
   grid-column: 2/4;
   height: 1.75rem;
   width: 38rem;
-  background-color: lightgray;
+  background-color: #dee3e7;
   justify-self: start;
   padding: 12px;
 }
@@ -231,7 +231,7 @@ header > div:last-child > div:last-child > button {
 }
 
 main {
-  background-color: azure;
+  background-color: #dee3e7;
   display: grid;
   grid-template-columns: 2fr 0.75fr;
   gap: 24px;
@@ -242,15 +242,17 @@ main > div:last-child {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 12px;
+  max-height: 800px;
 }
 main > div:last-child > div {
   display: grid;
   grid-template-rows: 24px 1fr;
+  gap: 12px;
 }
 main > div:last-child > div:first-child > #announcementCardBox {
   display: grid;
   overflow: auto;
-  gap: 48px;
+  gap: 36px;
   background-color: white;
   border-radius: 8px;
   padding: 24px;
@@ -259,6 +261,10 @@ main > div:last-child > div:first-child > #announcementCardBox {
   max-height: 480px;
   align-content: center;
   box-shadow: 6px 7px 10px -5px gray;
+}
+main > div:last-child > div:first-child > #announcementCardBox > div:first-child {
+  padding-top: 0;
+  border: none;
 }
 main > div:last-child > div:last-child #trendingCardBox {
   display: grid;
@@ -276,6 +282,9 @@ main > div:last-child > div:last-child #trendingCardBox {
 main > div:first-child {
   display: grid;
   grid-template-rows: 24px 1fr;
+}
+main > div:first-child > h3 {
+  padding-left: 12px;
 }
 main > div:first-child #cardBox {
   overflow: auto;
@@ -297,8 +306,7 @@ main > div:first-child #cardBox {
   padding: 24px;
   justify-content: space-between;
   border-radius: 8px;
-  box-shadow: inset 12px 0 0px -4px gold;
-  box-shadow: 6px 7px 10px -5px gray;
+  box-shadow: inset 12px 0 0px -4px #d1b517, 6px 7px 10px -5px gray;
 }
 .card > div:first-child {
   display: flex;
@@ -314,10 +322,17 @@ main > div:first-child #cardBox {
   display: flex;
   gap: 12px;
 }
+
 .announcementCard {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-top: 2px solid lightgrey;
+  padding-top: 36px;
+  gap: 6px;
+}
+.announcementCard > p {
+  color: gray;
 }
 
 .trendingCard {
@@ -331,7 +346,22 @@ main > div:first-child #cardBox {
   flex-direction: column;
   gap: 6px;
 }
+.trendingCard > div > p {
+  color: gray;
+}
 
 h3, h4, h5 {
   font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
 }
