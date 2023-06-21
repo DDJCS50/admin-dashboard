@@ -59,6 +59,7 @@ img, picture, svg, video {
 	--system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+
 button {
     display: inline-block;
     border: none;
@@ -72,6 +73,11 @@ button {
     line-height: 1;
     cursor: pointer;
     text-align: center;
+}
+
+button:hover {
+    background-color: darkgray;
+    color: black;
 }
 
 b {
@@ -186,7 +192,8 @@ header {
         display: flex;
         gap: 24px;
         align-items: center;
-        > p {
+        > a {
+            text-decoration: none;
             font-weight: bolder;
             color: white;
             font-size: 2rem;
@@ -201,10 +208,14 @@ header {
         > div {
             display: flex;
             gap: 24px;
-            > p {
+            > a {
+                text-decoration: none;
                 color: white;
                 font-weight: bold;
                 font-size: 1.25rem;
+            }
+            > a:hover {
+                color: darkgray;
             }
         }
     }
@@ -217,10 +228,14 @@ header {
         > div {
             display: flex;
             gap: 24px;
-            > p {
+            > a {
+                text-decoration: none;
                 color: white;
                 font-weight: bold;
                 font-size: 1.25rem;
+            }
+            > a:hover {
+                color: darkgray;
             }
         }
     }

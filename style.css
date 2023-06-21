@@ -80,6 +80,11 @@ button {
   text-align: center;
 }
 
+button:hover {
+  background-color: darkgray;
+  color: black;
+}
+
 b {
   font-weight: bold;
 }
@@ -194,7 +199,8 @@ header > div:last-child > div:last-child > button {
   gap: 24px;
   align-items: center;
 }
-#sidebar > div:first-child > p {
+#sidebar > div:first-child > a {
+  text-decoration: none;
   font-weight: bolder;
   color: white;
   font-size: 2rem;
@@ -209,10 +215,14 @@ header > div:last-child > div:last-child > button {
   display: flex;
   gap: 24px;
 }
-#sidebar > div:nth-child(2) > div > p {
+#sidebar > div:nth-child(2) > div > a {
+  text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 1.25rem;
+}
+#sidebar > div:nth-child(2) > div > a:hover {
+  color: darkgray;
 }
 #sidebar > div:last-child {
   display: flex;
@@ -224,10 +234,14 @@ header > div:last-child > div:last-child > button {
   display: flex;
   gap: 24px;
 }
-#sidebar > div:last-child > div > p {
+#sidebar > div:last-child > div > a {
+  text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 1.25rem;
+}
+#sidebar > div:last-child > div > a:hover {
+  color: darkgray;
 }
 
 main {
