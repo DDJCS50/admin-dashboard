@@ -274,6 +274,7 @@ main {
   gap: 24px;
   padding: 24px;
   min-height: 75vh;
+  padding-bottom: 48px;
 }
 main > div:last-child {
   display: grid;
@@ -302,6 +303,9 @@ main > div:last-child > div:first-child > #announcementCardBox {
 main > div:last-child > div:first-child > #announcementCardBox > div:first-child {
   padding-top: 0;
   border: none;
+}
+main > div:last-child > div:last-child {
+  max-height: 420px;
 }
 main > div:last-child > div:last-child #trendingCardBox {
   display: grid;

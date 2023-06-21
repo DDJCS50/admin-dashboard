@@ -271,6 +271,7 @@ main {
     gap: 24px;
     padding: 24px;
     min-height: 75vh;
+    padding-bottom: 48px;
     > div:last-child {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -301,6 +302,7 @@ main {
             }
         }
         > div:last-child {
+            max-height: 420px;
             #trendingCardBox {
                 display: grid;
                 overflow: auto;
