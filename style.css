@@ -85,6 +85,16 @@ button:hover {
   color: black;
 }
 
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.pfp {
+  height: 48px;
+  width: 48px;
+}
+
 b {
   font-weight: bold;
 }
@@ -93,6 +103,11 @@ body {
   display: grid;
   grid-template: 200px 1fr/1fr 4fr;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.medium {
+  height: 36px;
+  width: 36px;
 }
 
 header {
@@ -168,6 +183,8 @@ header > div:last-child > div:first-child {
 }
 header > div:last-child > div:first-child > img {
   justify-self: start;
+  height: 80px;
+  width: 80px;
 }
 header > div:last-child > div:first-child > p {
   line-height: 30px;
@@ -199,6 +216,10 @@ header > div:last-child > div:last-child > button {
   gap: 24px;
   align-items: center;
 }
+#sidebar > div:first-child > .icon:first-child {
+  height: 48px;
+  width: 48px;
+}
 #sidebar > div:first-child > a {
   text-decoration: none;
   font-weight: bolder;
@@ -210,6 +231,7 @@ header > div:last-child > div:last-child > button {
   flex-direction: column;
   gap: 24px;
   margin-top: 48px;
+  padding-left: 24px;
 }
 #sidebar > div:nth-child(2) > div {
   display: flex;
@@ -229,6 +251,7 @@ header > div:last-child > div:last-child > button {
   flex-direction: column;
   gap: 24px;
   margin-top: 48px;
+  padding-left: 24px;
 }
 #sidebar > div:last-child > div {
   display: flex;
